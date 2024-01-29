@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "patlite-control"
+version = "0.0.1"
+description = "Control Patlite LA6-POE Light"
+authors = ["Xinhao Luo <xinhao@matroid.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.flit.module]
+name = "python_package"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+pylint = "^3.0.3"
+pyright = "^1.1.349"
+
+[tool.black]
+line-length = 120
+fast = true
+
+[tool.pyright]
+include = ["src"]
+exclude = [
+    "**/__pycache__",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
