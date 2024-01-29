@@ -2,6 +2,16 @@ Adopted from https://github.com/PATLITE-Corporation/LA6-POE_windows_python_examp
 
 # Patlite Control
 
+## Usage
+
+### Install
+
+```bash
+install --force-reinstall git+https://github.com/xinhao-matroid/Patlite-Control.git#egg=patlite-control
+```
+
+### Code
+
 ```python
 from patlite_control import PatliteControl
 from patlite_control.messages import RunControlCommandData
